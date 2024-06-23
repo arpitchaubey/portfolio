@@ -50,11 +50,32 @@
   box-sizing: border-box;
 }
 
+/* Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Background of the scrollbar track */
+    border-radius: 10px;  /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;  /* Color of the scrollbar thumb */
+    border-radius: 10px;  /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* Color of the scrollbar thumb when hovered */
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scrollbar-width: thin;  /* Makes the scrollbar thin */
+    scrollbar-color: #888 #f1f1f1;  /* Color of the scrollbar thumb and track */
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
