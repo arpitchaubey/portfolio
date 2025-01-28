@@ -12272,3 +12272,40 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  column-count: 4;
+  font-family: arial;
+}
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+.gallery-item figure {
+  margin: 0;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+@media screen and (max-width: 500px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .gallery {
+    column-count: 3;
+  }
+}
