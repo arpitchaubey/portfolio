@@ -11203,78 +11203,10 @@ p {
   }
 }
 
-/*/ portfolio wrapper */
-.portfolio-card {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-card .portfolio-card-img {
-  width: 100%;
-}
-
-.portfolio-card .portfolio-card-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  background-image: -webkit-linear-gradient(bottom, #e1dfed 0%, rgba(225, 223, 237, 0.7) 99%, rgba(225, 223, 237, 0.8) 100%);
-  background-image: linear-gradient(to top, #e1dfed 0%, rgba(225, 223, 237, 0.7) 99%, rgba(225, 223, 237, 0.8) 100%);
-  -webkit-transition: all, 0.3s;
-  transition: all, 0.3s;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .portfolio-card .portfolio-card-overlay {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.portfolio-card .portfolio-card-overlay .portfolio-card-caption {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.portfolio-card:hover .portfolio-card-overlay {
-  opacity: 1;
-  visibility: visible;
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-}
-
 @media (max-width: 767.98px) {
-  .portfolio-card {
-    margin-bottom: 30px;
-  }
   .service-card {
     margin-bottom: 30px;
   }
-}
-
-/* Pricing card */
-.pricing-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
 }
 
 .pricing-wrapper {
@@ -11346,6 +11278,19 @@ p {
 .pricing-card .button:hover {
   background: #0056b3; /* Darker shade on hover */
 }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .pricing-wrapper {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align them */
+  }
+
+  .pricing-card {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .pricing-wrapper .pricing-card {
@@ -11426,46 +11371,97 @@ p {
   }
 }
 
-/* testmonial card */
-.testimonial-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+
+/* Job card styles */
+.job {
+  position: relative;
+  min-height: 150px; /* Adjust height as needed */
+  border-radius: 10px;
+  padding: 40px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-bottom: 30px;
 }
 
-.testimonial-card-img-holder {
-  min-width: 45px;
-  max-width: 45px;
-  z-index: 999;
+.job:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(2, 12, 27, 0.2);
 }
 
-.testimonial-card-img {
-  background: #fff;
-  padding: 4px;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
+.job img {
+  margin-bottom: 15px;
+  width: 65px;
+  height: 65px;
+  object-fit: fill;
 }
 
-.testimonial-card-body {
-  text-align: left;
-  border: 1px solid #dee2e6;
-  background: #fff;
-  padding: 20px 20px 20px 60px;
-  border-radius: 0;
+.job a{
+color: #695aa6;
+font-size: 8px;
 }
 
-.testimonial-card-title {
-  margin-top: 20px;
-  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1300 - 300)));
+.job-info h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
+.job-info p {
+  font-size: 1rem;
+  color: #8892b0;
+}
+
+/* Interactive animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.job {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+
+
+  .job {
+    min-height: 130px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .experience-section h2 {
+    font-size: 2rem;
+  }
+
+  .job {
+    padding: 1rem;
+  }
+
+  .job-info h3 {
+    font-size: 1.4rem;
+  }
+
+  .job-info p {
+    font-size: 0.85rem;
+  }
+}
 /* blog wrapper */
 .blog-card {
   display: -webkit-box;
