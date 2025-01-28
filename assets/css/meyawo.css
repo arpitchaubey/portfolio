@@ -50,34 +50,11 @@
   box-sizing: border-box;
 }
 
-/* Webkit browsers (Chrome, Safari) */
-::-webkit-scrollbar {
-    width: 12px;  /* Width of the scrollbar */
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;  /* Make the background invisible */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;  /* Color of the scrollbar thumb */
-    border-radius: 10px;  /* Rounded corners for the thumb */
-    border: 3px solid transparent;  /* Transparent border for rounded effect */
-    background-clip: padding-box;  /* Ensures the background color is clipped within the border */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;  /* Color of the scrollbar thumb when hovered */
-}
-
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
- scrollbar-width: thin;  /* Makes the scrollbar thin */
-    scrollbar-color: #888 transparent;  /* Color of the scrollbar thumb and transparent background */
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -11300,20 +11277,74 @@ p {
   display: flex;
 }
 
-.pricing-wrapper .pricing-card {
-  display: block;
-  border: 1px solid #dee2e6;
-  padding: 30px 15px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-flex-basis: 0;
-      -ms-flex-preferred-size: 0;
-          flex-basis: 0;
-  background: #fff;
-  -webkit-transition: all, 0.3s;
-  transition: all, 0.3s;
+.pricing-wrapper {
+  display: flex; /* Flexbox for alignment */
+  flex-wrap: wrap; /* Ensure responsiveness */
+  justify-content: space-around; /* Spread cards evenly */
+  align-items: stretch; /* Equal height for all cards */
+  gap: 20px; /* Add spacing between cards */
+  padding: 20px; /* Add some padding around the wrapper */
+  background-color: #fff; /* Slight background for the section */
+}
+
+.pricing-card {
+  flex: 1 1 300px; /* Grow and shrink evenly, with a base width of 300px */
+  max-width: 350px; /* Optional: Limit max width for better design */
+  border: 1px solid #dee2e6; /* Subtle border */
+  border-radius: 8px; /* Smooth rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 30px 20px; /* Inner spacing for content */
+  background: #fff; /* White background for cards */
+  display: flex; /* Flexbox for card content */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Spread content evenly */
+  text-align: center; /* Center-align text for consistency */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+/* Add hover effect for interactivity */
+.pricing-card:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 0 20px rgba(75, 0, 130, 0.7); /* Darker purple glowing effect */
+  border-color: #4b0082; /* Darker purple border on hover */
+}
+
+/* Optional: Headings and other elements */
+.pricing-card h3 {
+  font-size: 1.5rem; /* Bold heading */
+  margin-bottom: 15px;
+  color: #333; /* Dark text for contrast */
+}
+
+.pricing-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555; /* Muted text for details */
+}
+
+.pricing-card .price {
+  font-size: 2rem; /* Large price display */
+  font-weight: bold;
+  color: #007bff; /* Primary color for the price */
+  margin-bottom: 20px;
+}
+
+.pricing-card .button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pricing-card .button:hover {
+  background: #0056b3; /* Darker shade on hover */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -12271,41 +12302,4 @@ pre .code {
 
 .section-lg {
   padding: 100px 0 !important;
-}
-
-
-.gallery {
-  max-width: 1200px;
-  margin: 0 auto;
-  column-count: 4;
-  font-family: arial;
-}
-.gallery-item {
-  break-inside: avoid;
-  margin-bottom: 16px;
-}
-.gallery-item figure {
-  margin: 0;
-  position: relative;
-}
-
-.gallery-item img {
-  width: 100%;
-  border-radius: 14px;
-}
-
-@media screen and (max-width: 500px) {
-  .gallery {
-    column-count: 1;
-  }
-}
-@media screen and (min-width: 501px) and (max-width: 700px) {
-  .gallery {
-    column-count: 2;
-  }
-}
-@media screen and (min-width: 701px) and (max-width: 900px) {
-  .gallery {
-    column-count: 3;
-  }
 }
