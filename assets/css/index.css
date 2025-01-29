@@ -11217,7 +11217,6 @@ p {
   flex: 1 1 300px; /* Grow and shrink evenly, with a base width of 300px */
   max-width: 350px; /* Optional: Limit max width for better design */
   border: 1px solid #dee2e6; /* Subtle border */
-  border-radius: 8px; /* Smooth rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   padding: 30px 20px; /* Inner spacing for content */
   background: #fff; /* White background for cards */
@@ -11228,11 +11227,12 @@ p {
   transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
 }
 
-/* Add hover effect for interactivity */
+
 .pricing-card:hover {
   transform: translateY(-10px); /* Slight lift on hover */
   box-shadow: 0 0 20px rgba(75, 0, 130, 0.7); /* Darker purple glowing effect */
   border-color: #4b0082; /* Darker purple border on hover */
+  border-radius: 10px; /* Smooth rounded corners */
 }
 
 /* Optional: Headings and other elements */
