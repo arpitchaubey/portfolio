@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -8,12 +9,15 @@
     <title>Ac.dev</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" />
-    <!-- Bootstrap + Meyawo main styles -->
+    <!-- Animation on scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Bootstrap + CSS -->
     <link rel="stylesheet" href="assets/css/index.css" />
     <!-- Custom CSS for spacing -->
     <style>
         .pricing-card {
-            margin-bottom: 30px; /* Adjust as per your design */
+            margin-bottom: 30px;
+            /* Adjust as per your design */
         }
     </style>
 </head>
@@ -55,13 +59,15 @@
     <!-- page header -->
     <header id="home" class="header">
         <div class="overlay"></div>
-        <div class="header-content container">
+        <div class="header-content container" data-aos="fade-up">
             <h1 class="header-title">
                 <span class="up">HI!</span>
                 <span class="down">I am Arpit Chaubay</span>
             </h1>
             <p class="header-subtitle">FRONTEND WEB DESIGNER</p>
-            <a href="https://github.com/arpitchaubey" target="_blank" rel="noopener noreferrer"><button class="btn btn-primary">Visit My Works</button></a>
+            <a href="https://github.com/arpitchaubey" target="_blank">
+                <button class="btn btn-primary" data-aos="zoom-in">Visit My Works</button>
+            </a>
         </div>
     </header>
     <!-- end of page header -->
@@ -70,90 +76,134 @@
     <section class="section pt-0" id="about">
         <div class="container text-center">
             <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/bit3.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" />
+                <div class="about-img-holder" data-aos="fade-right">
+                    <img src="assets/imgs/bit3.png" class="about-img" alt="Profile Image" />
                 </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
+                <div class="about-caption" data-aos="fade-left">
+                    <p class="section-subtitle">Who Am I?</p>
                     <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        Welcome to my coding cosmos! I am Arpit Chuabay, a fervent coding enthusiast driven by an insatiable curiosity to unravel the intricacies of technology, one line of code at a time.
+                    <p>WWelcome to my coding cosmos! I am Arpit Chuabay, a fervent coding enthusiast driven by an
+                        insatiable curiosity to unravel the intricacies of technology, one line of code at a time.
 
-                        With a deep-seated passion for programming, I embark on a journey where each challenge becomes an opportunity to hone my skills and expand my knowledge base. From crafting elegant algorithms to building intuitive user interfaces, I thrive on transforming ideas into innovative solutions.
+                        With a deep-seated passion for programming, I embark on a journey where each challenge becomes
+                        an opportunity to hone my skills and expand my knowledge base. From crafting elegant algorithms
+                        to building intuitive user interfaces, I thrive on transforming ideas into innovative solutions.
                         <br>
                         <br>
-                        My journey is not just about mastering languages and frameworks; it's about embracing the art of problem-solving and the thrill of continuous learning. Armed with a strong foundation in programming principles and a commitment to excellence, I eagerly seek to contribute my skills to projects that push the boundaries of what's possible.
+                        My journey is not just about mastering languages and frameworks; it's about embracing the art of
+                        problem-solving and the thrill of continuous learning. Armed with a strong foundation in
+                        programming principles and a commitment to excellence, I eagerly seek to contribute my skills to
+                        projects that push the boundaries of what's possible.
 
-                        Join me as I navigate through the ever-evolving landscape of technology, fueled by determination, creativity, and a relentless pursuit of excellence. Together, let's make an impact and shape the future with code</p>
-                    <a href="assets/ArpitChaubay_Resume.pdf" download="resume.pdf"> <button class="btn-rounded btn btn-outline-primary mt-4"> Download Resume</button></a>
+                        Join me as I navigate through the ever-evolving landscape of technology, fueled by
+                        determination, creativity, and a relentless pursuit of excellence. Together, let's make an
+                        impact and shape the future with code
+                    </p>
+                    <a href="assets/ArpitChaubay_Resume.pdf" download="resume.pdf">
+                        <button class="btn-rounded btn btn-outline-primary mt-4" data-aos="fade-up">Download
+                            Resume</button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- end of about section -->
 
     <!-- pricing section -->
     <section class="section" id="pricing">
         <div class="container text-center">
-            <p class="section-subtitle">What I have work on ?</p>
-            <h6 class="section-title mb-6">My Projects</h6>
+            <p class="section-subtitle" data-aos="zoom-in" data-aos-delay="100">What I have work on ?</p>
+            <h6 class="section-title mb-6" data-aos="fade-up" data-aos-delay="200">My Projects</h6>
             <div class="pricing-wrapper">
-                <div class="pricing-card">
+                <div class="pricing-card" data-aos="zoom-in">
                     <div class="pricing-card-header">
                         <h6 class="pricing-card-title">Money Mentor</h6>
                     </div>
                     <div class="pricing-card-body">
                         <div class="pricing-card-list">
-                            <p>Money Mentor is a sophisticated financial advisor landing page featuring an integrated chatbot tailored to handle typical financial inquiries. This project exemplifies seamless integration between front-end web development and the Python Flask framework. The technology stack includes HTML and CSS for the front-end, while Flask serves as the backend framework. Python libraries such as PyTorch and NLTK enhance functionality. Together, these components enable robust and responsive user interactions, setting a high standard in modern web development for financial services.</p>
+                            <p>Money Mentor is a sophisticated financial advisor landing page featuring an integrated
+                                chatbot tailored to handle typical financial inquiries. This project exemplifies
+                                seamless integration between front-end web development and the Python Flask framework.
+                                The technology stack includes HTML and CSS for the front-end, while Flask serves as the
+                                backend framework. Python libraries such as PyTorch and NLTK enhance functionality.
+                                Together, these components enable robust and responsive user interactions, setting a
+                                high standard in modern web development for financial services.</p>
                         </div>
                     </div>
 
                     <div class="pricing-card-footer">
-                        <a href="https://github.com/arpitchaubey/Money-Mentor-using-Nlp" class="btn btn-primary mt-3 pricing-card-btn"><i class="ti-github" target="_blank" rel="noopener noreferrer"></i> Check-out</a>
+                        <a href="https://github.com/arpitchaubey/Money-Mentor-using-Nlp"
+                            class="btn btn-primary mt-3 pricing-card-btn"><i class="ti-github" target="_blank"
+                                rel="noopener noreferrer"></i> Check-out</a>
                     </div>
                 </div>
 
-                <div class="pricing-card">
+                <div class="pricing-card" data-aos="zoom-in">
                     <div class="pricing-card-header">
                         <h6 class="pricing-card-title">Club-Smith</h6>
                     </div>
                     <div class="pricing-card-body">
                         <div class="pricing-card-list">
-                            <p>The Club-Smith is a pioneering web-based platform designed to revolutionize the operations of student clubs within an educational institution. By combining the power of HTML, CSS, JavaScript, Python, and the Django framework, the system offers a comprehensive suite of features aimed at streamlining club management, fostering collaboration, and facilitating communication among members. The system is meticulously designed to provide a seamless experience for members, making it effortless for them to participate in club activities, share resources, and collaborate on projects.</p>
+                            <p>The Club-Smith is a pioneering web-based platform designed to revolutionize the
+                                operations of student clubs within an educational institution. By combining the power of
+                                HTML, CSS, JavaScript, Python, and the Django framework, the system offers a
+                                comprehensive suite of features aimed at streamlining club management, fostering
+                                collaboration, and facilitating communication among members. The system is meticulously
+                                designed to provide a seamless experience for members, making it effortless for them to
+                                participate in club activities, share resources, and collaborate on projects.</p>
                         </div>
                     </div>
 
                     <div class="pricing-card-footer">
-                        <a href="https://github.com/arpitchaubey/Club-smith" class="btn btn-primary mt-3 pricing-card-btn"><i class="ti-github" target="_blank" rel="noopener noreferrer"></i> Check-out</a>
+                        <a href="https://github.com/arpitchaubey/Club-smith"
+                            class="btn btn-primary mt-3 pricing-card-btn"><i class="ti-github" target="_blank"
+                                rel="noopener noreferrer"></i> Check-out</a>
                     </div>
                 </div>
 
-                <div class="pricing-card">
+                <div class="pricing-card" data-aos="zoom-in">
                     <div class="pricing-card-header">
                         <h6 class="pricing-card-title">Helmet-detection</h6>
                     </div>
                     <div class="pricing-card-body">
                         <div class="pricing-card-list">
-                            <p>Welcome to the Helmet Detection Using YOLOv8 project! Powered by the YOLOv8 model, a cutting-edge framework in the field of computer vision, this project stands at the forefront of object detection technology. YOLOv8, known for its exceptional speed and accuracy, has been meticulously trained to excel in real-time detection tasks, making it ideal for applications such as identifying helmets in diverse visual environments. This comprehensive guide is designed to empower users of all levels—whether you're just starting out or are experienced in machine learning and computer vision.</p>
+                            <p>Welcome to the Helmet Detection Using YOLOv8 project! Powered by the YOLOv8 model, a
+                                cutting-edge framework in the field of computer vision, this project stands at the
+                                forefront of object detection technology. YOLOv8, known for its exceptional speed and
+                                accuracy, has been meticulously trained to excel in real-time detection tasks, making it
+                                ideal for applications such as identifying helmets in diverse visual environments. This
+                                comprehensive guide is designed to empower users of all levels—whether you're just
+                                starting out or are experienced in machine learning and computer vision.</p>
                         </div>
                     </div>
 
                     <div class="pricing-card-footer">
-                        <a href="https://github.com/arpitchaubey/Helmet-detection-system-using-Yolo-8" class="btn btn-primary mt-3 pricing-card-btn"><i class="ti-github" target="_blank" rel="noopener noreferrer"></i> Check-out</a>
+                        <a href="https://github.com/arpitchaubey/Helmet-detection-system-using-Yolo-8"
+                            class="btn btn-primary mt-3 pricing-card-btn"><i class="ti-github" target="_blank"
+                                rel="noopener noreferrer"></i> Check-out</a>
                     </div>
                 </div>
-                <div class="pricing-card">
+                <div class="pricing-card" data-aos="zoom-in">
                     <div class="pricing-card-header">
                         <h6 class="pricing-card-title">DAI(Detect AI Involvment)</h6>
                     </div>
                     <div class="pricing-card-body">
                         <div class="pricing-card-list">
-                            <p>DAI (Detect AI Involvement) is an advanced tool designed to identify and analyze the presence of AI-generated content across various mediums. With a focus on detecting AI involvement in videos (such as face-swapped deepfakes), images, audio mimicry, and text, DAI leverages state-of-the-art machine learning and deep learning techniques to ensure authenticity and traceability in digital content. The project aims to combat misinformation, protect privacy, and promote ethical AI usage by empowering users with reliable detection tools for AI-generated content.</p>
+                            <p>DAI (Detect AI Involvement) is an advanced tool designed to identify and analyze the
+                                presence of AI-generated content across various mediums. With a focus on detecting AI
+                                involvement in videos (such as face-swapped deepfakes), images, audio mimicry, and text,
+                                DAI leverages state-of-the-art machine learning and deep learning techniques to ensure
+                                authenticity and traceability in digital content. The project aims to combat
+                                misinformation, protect privacy, and promote ethical AI usage by empowering users with
+                                reliable detection tools for AI-generated content.</p>
                         </div>
                     </div>
 
                     <div class="pricing-card-footer">
-                        <a href="https://github.com/arpitchaubey/DAI--Detect-AI-Involvement-" class="btn btn-primary mt-3 pricing-card-btn"><i class="ti-github" target="_blank" rel="noopener noreferrer"></i> Check-out</a>
+                        <a href="https://github.com/arpitchaubey/DAI--Detect-AI-Involvement-"
+                            class="btn btn-primary mt-3 pricing-card-btn"><i class="ti-github" target="_blank"
+                                rel="noopener noreferrer"></i> Check-out</a>
                     </div>
                 </div>
             </div>
@@ -164,10 +214,10 @@
     <!-- service section -->
     <section class="section" id="service">
         <div class="container text-center">
-            <p class="section-subtitle">Skills</p>
-            <h2 class="section-title mb-6">What I Can Do</h2>
+            <p class="section-subtitle" data-aos="fade-up">Skills</p>
+            <h2 class="section-title mb-6" data-aos="zoom-in" data-aos-delay="200">What I Can Do</h2>
             <div class="row justify-content-center">
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/html-5.png" alt="HTML Icon" class="icon" />
@@ -175,7 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/css-3.png" alt="CSS Icon" class="icon" />
@@ -183,7 +233,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/programing.png" alt="JavaScript Icon" class="icon" />
@@ -191,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/icons8-tailwind-css-400.png" alt="Tailwind Icon" class="icon" />
@@ -199,7 +249,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="500">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/python.png" alt="Python" class="icon" />
@@ -207,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="600">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/database.png" alt="SQL Icon" class="icon" />
@@ -215,7 +265,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="700">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/icons8-mongodb-480.png" alt="MongoDB Icon" class="icon" />
@@ -223,7 +273,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="800">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/php.png" alt="PHP Icon" class="icon" />
@@ -231,7 +281,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="900">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/git.png" alt="Git Icon" class="icon" />
@@ -239,7 +289,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="1000">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/icons8-bootstrap-480.png" alt="Bootstrap Icon" class="icon" />
@@ -247,7 +297,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="1100">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/icons8-figma-480.png" alt="Figma Icon" class="icon" />
@@ -260,30 +310,39 @@
     </section>
     <!-- end of service section -->
 
-    <!-- experience section -->
-    <section id="experience" class="section" id="service">
+    <!-- Experience Section -->
+    <section id="experience" class="section">
         <div class="container text-center">
-            <p class="section-subtitle">Where I have Worked</p>
-            <h2 class="section-title mb-6">Experience</h2>
+            <p class="section-subtitle" data-aos="fade-up">Where I have Worked</p>
+            <h2 class="section-title mb-6" data-aos="fade-up" data-aos-delay="200">Experience</h2>
             <div class="row justify-content-center">
-        <div class="col-md-4 col-lg-3">
-            <div class="job">
-                <div class="body">
-                    <img src="assets/imgs/helpinggeeks logo.jpg" alt="Helpinggeeks Logo" class="icon" />
-                    <div class="job-info">
-                        <a><h3>Frontend Developer</h3></a>
-                        <a class="com" href="https://www.helpinggeeks.com/" target="_blank" rel="noopener noreferrer" ><h5>Helpinggeeks</h5></a><p>4 months | Intership </p>
+                <div class="col-md-4 col-lg-3" data-aos="fade-right">
+                    <div class="job">
+                        <div class="body">
+                            <img src="assets/imgs/helpinggeeks logo.jpg" alt="Helpinggeeks Logo" class="icon" />
+                            <div class="job-info">
+                                <h3>Frontend Developer</h3>
+                                <a class="com" href="https://www.helpinggeeks.com/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <h5>Helpinggeeks</h5>
+                                </a>
+                                <p>4 months | Internship</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-lg-3">
-            <div class="job">   
-                <div class="body">
-                    <img src="assets/imgs/kushavya logo.png" alt="Kushavya Logo" class="icon" />
-                    <div class="job-info">
-                        <h3>Frontend Developer</h3>
-                        <a class="com" href="https://kushavya.in/" target="_blank" rel="noopener noreferrer"><h5>Kushavya</h5></a><p>currently | Freelancer</p>
+                <div class="col-md-4 col-lg-3" data-aos="fade-left">
+                    <div class="job">
+                        <div class="body">
+                            <img src="assets/imgs/kushavya logo.png" alt="Kushavya Logo" class="icon" />
+                            <div class="job-info">
+                                <h3>Frontend Developer</h3>
+                                <a class="com" href="https://kushavya.in/" target="_blank" rel="noopener noreferrer">
+                                    <h5>Kushavya</h5>
+                                </a>
+                                <p>Currently | Freelancer</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -291,16 +350,18 @@
     </section>
     <!-- end of experience section -->
 
-    <!-- contact section -->
+
+    <!-- Contact Section -->
     <section class="section" id="contact">
         <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <div class="contact-form col-md-10 col-lg-8 m-auto">
+            <p class="section-subtitle" data-aos="fade-up">How can you communicate?</p>
+            <h6 class="section-title mb-5" data-aos="fade-up" data-aos-delay="200">Contact Me</h6>
+            <div class="contact-form col-md-10 col-lg-8 m-auto" data-aos="fade-up" data-aos-delay="400">
                 <a href="mailto:Arpitchaubaydev@gmail.com" class="btn btn-outline-primary rounded">Send Email</a>
             </div>
         </div>
     </section>
+
     <!-- end of contact section -->
 
     <!-- footer -->
@@ -308,10 +369,14 @@
         <footer class="footer">
             <p class="mb-0">Created by Arpit ♡ .</p>
             <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="https://x.com/ArpitChaubay" class="link" target="_blank" rel="noopener noreferrer"><i class="ti-twitter-alt"></i></a>
-                <a href="https://www.linkedin.com/in/arpit-chaubay-19997526a/" class="link" target="_blank" rel="noopener noreferrer"><i class="ti-linkedin"></i></a>
-                <a href="https://www.instagram.com/im.arpit.dev" class="link" target="_blank" rel="noopener noreferrer"><i class="ti-instagram"></i></a>
-                <a href="https://github.com/arpitchaubey" class="link" target="_blank" rel="noopener noreferrer"><i class="ti-github"></i></a>
+                <a href="https://x.com/ArpitChaubay" class="link" target="_blank" rel="noopener noreferrer"><i
+                        class="ti-twitter-alt"></i></a>
+                <a href="https://www.linkedin.com/in/arpit-chaubay-19997526a/" class="link" target="_blank"
+                    rel="noopener noreferrer"><i class="ti-linkedin"></i></a>
+                <a href="https://www.instagram.com/im.arpit.dev" class="link" target="_blank"
+                    rel="noopener noreferrer"><i class="ti-instagram"></i></a>
+                <a href="https://github.com/arpitchaubey" class="link" target="_blank" rel="noopener noreferrer"><i
+                        class="ti-github"></i></a>
             </div>
         </footer>
     </div>
@@ -323,8 +388,31 @@
 
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <!-- AOS -->
 
-    <!-- Meyawo js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration
+            once: true, // Ensures animation runs once when scrolled into view
+            easing: 'ease-in-out', // Smooth animations
+        });
+    </script>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <!-- index js -->
     <script src="assets/js/index.js"></script>
 </body>
+
 </html>
