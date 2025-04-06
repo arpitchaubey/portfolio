@@ -1,21 +1,35 @@
-const API_KEY = 'AIzaSyD_qx8pA9E9z7mywqiyx5k8vub-b1MtqkQ'; // Replace with your actual key
-const SHEET_ID = '1XVpInTQfLufDF1JQBVlYiu3lQWto905z4Hdn6I81ePc';
-const RANGE = 'PersonalSpace!A1:E100';
+// No API Key, Sheet ID, or Range needed here!
 
 const sheetData = document.getElementById('sheet-data');
+// Paste the Google Apps Script Web App URL you copied here
+const WEB_APP_URL = 'PASTE_YOUR_WEB_APP_URL_HERE'; // <-- IMPORTANT
 
 async function loadSheetData() {
-  const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=${API_KEY}`;
+  const url = WEB_APP_URL;
+
+  sheetData.innerHTML = '<p>Loading data...</p>';
 
   try {
     const response = await fetch(url);
+
+    if (!response.ok) {
+       const errorData = await response.json().catch(() => ({ error: 'Failed to fetch data from Apps Script.' }));
+       throw new Error(`Error ${response.status}: ${errorData.error || 'Unknown server error'}`);
+    }
+
     const data = await response.json();
+
+    // Check if the Apps Script returned an error structure
+    if (data.error) {
+      throw new Error(`Apps Script Error: ${data.error}`);
+    }
 
     if (!data.values || data.values.length === 0) {
       sheetData.innerHTML = '<p>No data found in the sheet.</p>';
       return;
     }
 
+    // --- Table building logic remains the same as before ---
     const table = document.createElement('table');
     const [headers, ...rows] = data.values;
 
@@ -34,20 +48,22 @@ async function loadSheetData() {
     const tbody = document.createElement('tbody');
     rows.forEach(row => {
       const tr = document.createElement('tr');
-      headers.forEach((_, i) => {
-        const td = document.createElement('td');
-        td.textContent = row[i] || '';
-        tr.appendChild(td);
-      });
+      for (let i = 0; i < headers.length; i++) {
+         const td = document.createElement('td');
+         td.textContent = row[i] || '';
+         tr.appendChild(td);
+      }
       tbody.appendChild(tr);
     });
     table.appendChild(tbody);
 
     sheetData.innerHTML = '';
     sheetData.appendChild(table);
+    // --- End of table building logic ---
+
   } catch (error) {
     console.error('Error loading sheet data:', error);
-    sheetData.innerHTML = '<p>Error loading data. Please check your API key or sheet permissions.</p>';
+    sheetData.innerHTML = `<p>Error loading data: ${error.message}. Please check console.</p>`;
   }
 }
 
