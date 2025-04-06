@@ -2,7 +2,7 @@
 
 const sheetData = document.getElementById('sheet-data');
 // Paste the Google Apps Script Web App URL you copied here
-const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxLBZ-ktL_OTaJYb9t3SWEGTHasmMOHTSf34EdJrA-CGBxDX5D6F-Oi0bFtWySn6Jy0/exec'; // <-- IMPORTANT
+const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzEdBWvivtYjFefBgCn6_KZ652ZKGu4r-qDRXYWwKlQ26S_30akiLsWASzOo19YMuaD/exec // <-- IMPORTANT
 
 async function loadSheetData() {
   const url = WEB_APP_URL;
