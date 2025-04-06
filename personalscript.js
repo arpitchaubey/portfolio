@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_API_KEY_HERE'; // Replace with your actual key
+const API_KEY = 'AIzaSyD_qx8pA9E9z7mywqiyx5k8vub-b1MtqkQ'; // Replace with your actual key
 const SHEET_ID = '1XVpInTQfLufDF1JQBVlYiu3lQWto905z4Hdn6I81ePc';
 const RANGE = 'PersonalSpace!A1:E100';
 
