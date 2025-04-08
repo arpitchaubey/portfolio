@@ -1,12 +1,12 @@
 const sheetDataContainer = document.getElementById('sheet-data');
 
 // --- IMPORTANT: PASTE YOUR COPIED WEB APP URL BELOW ---
-const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxptnw5huIkJ1tB4GmK3SfNj6HA3nfvyrGOdFbY-k4YcAdQ6-bwbEQ4y_G3sGp6MRip/exec';
+const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxshm4anW5rlgxYj1aeJHbn69Zva6nkAJ7B-R0tG-4g_8MUhI-ALI-6RHE1qN5oZ0nR/exec';
 // --- Example: const WEB_APP_URL = 'https://script.google.com/macros/s/AKfyc.../exec'; ---
 
 async function loadSheetData() {
   // Basic check if the URL placeholder was replaced
-  if (!WEB_APP_URL || WEB_APP_URL === 'https://script.google.com/macros/s/AKfycbxptnw5huIkJ1tB4GmK3SfNj6HA3nfvyrGOdFbY-k4YcAdQ6-bwbEQ4y_G3sGp6MRip/exec') {
+  if (!WEB_APP_URL || WEB_APP_URL === 'https://script.google.com/macros/s/AKfycbxshm4anW5rlgxYj1aeJHbn69Zva6nkAJ7B-R0tG-4g_8MUhI-ALI-6RHE1qN5oZ0nR/exec') {
     sheetDataContainer.innerHTML = '<p style="color: red;">Error: Web App URL not set in script.js</p>';
     return;
   }
